@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -24,6 +24,7 @@
     <ProjectGuid>{a62e8ce3-a97d-42b3-a4ae-88ff7d78f7f5}</ProjectGuid>
     <RootNamespace>DAEaterOf</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Module 5 Lab</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -123,7 +124,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EaterOfMain.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PicReader.cpp" />
+    <ClCompile Include="Pixel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EaterOf.h" />
+    <ClInclude Include="PicReader.h" />
+    <ClInclude Include="Pixel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="colors.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
